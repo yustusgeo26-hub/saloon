@@ -29,7 +29,7 @@ window.SALON_CONFIG = {
 
   /* --- Salon identity --- */
   name: "AGUSTA SALOON",
-  shortName: "GUSTRA",
+  shortName: "AguStar",
   tagline: "Beauty Salon",
   taglineSw: "Saluni ya Urembo",        // shown when the visitor picks Swahili (optional)
 
