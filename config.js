@@ -22,7 +22,7 @@
    Tanzania example: 255712345678
    Until you change it, the booking form will tell the visitor that
    WhatsApp is not set up yet instead of opening a broken link.        */
-const WHATSAPP_NUMBER = "255764913509";
+const WHATSAPP_NUMBER = "255761445201";
 
 /* ---------- 2. EVERYTHING ELSE --------------------------------------- */
 window.SALON_CONFIG = {
