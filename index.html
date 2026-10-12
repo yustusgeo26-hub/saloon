@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Braids & More Beauty Salon | Braids, Twists, Locs & Natural Hair</title>
+  <meta name="description" content="Professional African hairstyling: braids, cornrows, twists, crochet, locs and natural hair care. Book your appointment on WhatsApp.">
+  <meta name="theme-color" content="#8e1565">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" id="brand-link" href="#home" aria-label="Braids & More Beauty Salon — home">
+        <img class="brand-logo" data-cfg="logo" alt="" width="52" height="52">
+        <span class="brand-text">
+          <span class="brand-name" data-cfg-text="shortName">Braids &amp; More</span>
+          <span class="brand-tag" data-cfg-text="tagline">Beauty Salon</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="#menu" class="nav-link" data-i18n="nav.menu">Hairstyles Menu</a></li>
+          <li><a href="#gallery" class="nav-link" data-i18n="nav.gallery">Gallery</a></li>
+        </ul>
+        <a class="btn btn-primary nav-book" href="#booking">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3.5 9h17M5 4.5h14A1.5 1.5 0 0 1 20.5 6v13A1.5 1.5 0 0 1 19 20.5H5A1.5 1.5 0 0 1 3.5 19V6A1.5 1.5 0 0 1 5 4.5Z"/></svg>
+          <span data-i18n="nav.book">Book Appointment</span>
+        </a>
+      </nav>
+
+      <!-- Language switch: English / Kiswahili -->
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.aria">
+        <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+        <button type="button" data-lang="sw" lang="sw" aria-label="Kiswahili" aria-pressed="false">SW</button>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Professional Hairstyling</p>
+          <h1 id="hero-title"><span data-i18n="hero.t1">Braids</span> <span class="dot">•</span> <span data-i18n="hero.t2">Twists</span> <span class="dot">•</span> <span data-i18n="hero.t3">Locs</span> <em data-i18n="hero.t4">&amp; Natural Hair Care</em></h1>
+          <p class="lead" data-i18n="hero.lead">Trendy, neat and long-lasting hairstyles for every occasion. Discover your next look with our professional hairstyling services.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3.5 9h17M5 4.5h14A1.5 1.5 0 0 1 20.5 6v13A1.5 1.5 0 0 1 19 20.5H5A1.5 1.5 0 0 1 3.5 19V6A1.5 1.5 0 0 1 5 4.5Z"/></svg>
+              <span data-i18n="nav.book">Book Appointment</span>
+            </a>
+            <a class="btn btn-outline" href="#menu"><span data-i18n="hero.viewMenu">View Hairstyles Menu</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img data-cfg="hero" alt="Smiling woman wearing long neat braids with gold cuffs" data-i18n-attr="alt:hero.alt" width="910" height="704" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HAIRSTYLES MENU ============ -->
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-line" data-i18n="menu.eyebrow">Our Services</p>
+          <h2 id="menu-title" data-i18n="menu.title">Hairstyles Menu</h2>
+          <p class="section-sub" data-i18n="menu.sub">Tap any hairstyle to choose it — it will be carried into your booking.</p>
+        </header>
+        <div class="menu-grid" id="menu-grid"><!-- rendered from config.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ LENGTH / SIZE / PRICING ============ -->
+    <section class="section section-tight" id="options" aria-labelledby="options-title">
+      <div class="container">
+        <h2 id="options-title" class="visually-hidden" data-i18n="opt.title">Choose your length and size</h2>
+        <div class="options-panel">
+          <div class="opt-col">
+            <h3><span data-i18n="opt.lengths">Lengths</span> <em data-i18n="opt.lengthsAlt">(Urefu)</em></h3>
+            <div class="chips" id="length-options" role="radiogroup" aria-label="Hair length" data-i18n-attr="aria-label:opt.lengthAria"></div>
+          </div>
+          <div class="opt-col">
+            <h3><span data-i18n="opt.sizes">Sizes</span> <em data-i18n="opt.sizesAlt">(Ukubwa)</em></h3>
+            <div class="chips" id="size-options" role="radiogroup" aria-label="Braid or twist size" data-i18n-attr="aria-label:opt.sizeAria"></div>
+          </div>
+          <div class="opt-col opt-price">
+            <h3><span data-i18n="opt.pricing">Pricing</span> <em data-i18n="opt.pricingAlt">(Bei)</em></h3>
+            <!-- Both languages are always shown on purpose -->
+            <p class="price-sw" lang="sw">Bei hutegemea hairstyle, size, urefu wa nywele na vifaa vinavyotumika.</p>
+            <p class="price-en" lang="en">Prices depend on the hairstyle, size, hair length, and materials used.</p>
+            <button type="button" class="btn btn-wa" id="price-btn">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.3 2.5 2.5 5 5.5 6l1.2-1.3-1.7-1-.9.6c-.9-.4-1.7-1.2-2.1-2.1l.6-.9-1-1.7L9 8.5Z"/></svg>
+              <span data-i18n="price.btn">Request Price on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+        <p class="selection-summary" id="selection-summary" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-line" data-i18n="gallery.eyebrow">Our Gallery</p>
+          <h2 id="gallery-title" data-i18n="gallery.title">Recent Hairstyles</h2>
+        </header>
+        <div class="filter-row" id="gallery-filters" role="group" aria-label="Filter gallery by style" data-i18n-attr="aria-label:gallery.filterAria"></div>
+        <div class="carousel">
+          <button class="car-btn car-prev" id="car-prev" type="button" aria-label="Scroll gallery left" data-i18n-attr="aria-label:gallery.prev">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <ul class="car-track" id="car-track" aria-label="Hairstyle photos" data-i18n-attr="aria-label:gallery.list"></ul>
+          <button class="car-btn car-next" id="car-next" type="button" aria-label="Scroll gallery right" data-i18n-attr="aria-label:gallery.next">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <div class="dots" id="car-dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band" aria-label="Book now" data-i18n-attr="aria-label:cta.aria">
+      <div class="container cta-inner">
+        <svg class="cta-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3.5 9h17M5 4.5h14A1.5 1.5 0 0 1 20.5 6v13A1.5 1.5 0 0 1 19 20.5H5A1.5 1.5 0 0 1 3.5 19V6A1.5 1.5 0 0 1 5 4.5Z"/></svg>
+        <div class="cta-text">
+          <strong data-i18n="cta.title">Ready for a new look?</strong>
+          <span data-i18n="cta.sub">Book your appointment today!</span>
+        </div>
+        <a class="btn btn-light" href="#booking"><span data-i18n="nav.book">Book Appointment</span>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section section-soft" id="booking" aria-labelledby="booking-title">
+      <div class="container booking-grid">
+        <div class="booking-intro">
+          <p class="eyebrow eyebrow-line" data-i18n="booking.eyebrow">Appointments</p>
+          <h2 id="booking-title" data-i18n="booking.title">Book Your Appointment</h2>
+          <p data-i18n-html="booking.intro">Fill in your details and we will open WhatsApp with your request already written. Your appointment is only requested once you press <strong>Send</strong> in WhatsApp, and the salon will reply to confirm.</p>
+          <div class="your-choice" aria-live="polite">
+            <h3 data-i18n="choice.title">Your choice</h3>
+            <dl>
+              <div><dt data-i18n="choice.hairstyle">Hairstyle</dt><dd id="bc-style">Not selected yet</dd></div>
+              <div><dt data-i18n="choice.length">Length</dt><dd id="bc-length">Not selected yet</dd></div>
+              <div><dt data-i18n="choice.size">Size</dt><dd id="bc-size">Not selected yet</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <div class="field">
+            <label for="f-name"><span data-i18n="form.name">Full name</span> <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <p class="err" id="e-name" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-style"><span data-i18n="form.style">Preferred hairstyle</span> <span class="req" aria-hidden="true">*</span></label>
+            <select id="f-style" name="style" required></select>
+            <p class="err" id="e-style" role="alert"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-length"><span data-i18n="form.length">Hair length</span> <span class="req" aria-hidden="true">*</span></label>
+              <select id="f-length" name="length" required></select>
+              <p class="err" id="e-length" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-size"><span data-i18n="form.size">Hair size</span> <span class="req" aria-hidden="true">*</span></label>
+              <select id="f-size" name="size" required></select>
+              <p class="err" id="e-size" role="alert"></p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-date"><span data-i18n="form.date">Preferred date</span> <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-date" name="date" type="date" required>
+              <p class="err" id="e-date" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-time"><span data-i18n="form.time">Preferred time</span> <span class="req" aria-hidden="true">*</span></label>
+              <select id="f-time" name="time" required></select>
+              <p class="err" id="e-time" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-notes" data-i18n="form.notes">Additional notes</label>
+            <textarea id="f-notes" name="notes" rows="3" placeholder="Hair colour, own hair or extensions, anything we should know…" data-i18n-attr="placeholder:form.notesPh"></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/></svg>
+            <span data-i18n="form.submit">Send Request on WhatsApp</span>
+          </button>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#home">
+          <img class="brand-logo" data-cfg="logo" alt="" width="44" height="44">
+          <span class="brand-text">
+            <span class="brand-name" data-cfg-text="shortName">Braids &amp; More</span>
+            <span class="brand-tag" data-cfg-text="tagline">Beauty Salon</span>
+          </span>
+        </a>
+        <p data-i18n="footer.about">Braids, twists, locs and natural hair care.</p>
+        <div class="social" id="footer-social"></div>
+      </div>
+      <nav aria-label="Footer">
+        <h3 data-i18n="footer.quick">Quick Links</h3>
+        <ul>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#menu" data-i18n="nav.menu">Hairstyles Menu</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="#booking" data-i18n="nav.book">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <div id="footer-contact">
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <ul id="footer-contact-list"></ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> <span data-cfg-text="name">Braids &amp; More Beauty Salon</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </footer>
+
+  <!-- Sticky summary of the visitor's chosen style -->
+  <div class="selection-bar" id="selection-bar" hidden>
+    <p class="sel-text" id="sel-text"></p>
+    <div class="sel-actions">
+      <a class="btn btn-primary btn-sm" href="#booking" id="sel-book" data-i18n="sel.book">Book</a>
+      <button class="btn btn-wa btn-sm" type="button" id="sel-price" data-i18n="sel.price">Price on WhatsApp</button>
+      <button class="sel-clear" type="button" id="sel-clear" aria-label="Clear my choices" data-i18n-attr="aria-label:sel.clear">✕</button>
+    </div>
+  </div>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" data-i18n-attr="aria-label:toTop" hidden>
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg>
+  </button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" data-i18n-attr="aria-label:lb.aria" hidden>
+    <button class="lb-close" id="lb-close" type="button" aria-label="Close photo" data-i18n-attr="aria-label:lb.close">✕</button>
+    <button class="lb-nav lb-prev" id="lb-prev" type="button" aria-label="Previous photo" data-i18n-attr="aria-label:lb.prev">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <figure class="lb-fig">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" type="button" aria-label="Next photo" data-i18n-attr="aria-label:lb.next">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <script>
+    /* Remembers a typing mistake inside config.js so the page can explain it */
+    window.addEventListener('error', function (e) {
+      if (e.filename && /config\.js/.test(e.filename)) window.__configError = e.message + ' (line ' + e.lineno + ')';
+    });
+  </script>
+  <script src="config.js"></script>
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
