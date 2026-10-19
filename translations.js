@@ -162,6 +162,15 @@ window.I18N = {
   'msg.bookBye':    { en: 'Please confirm if this time is available. Asante!', sw: 'Tafadhali nithibitishie kama muda huu unapatikana. Asante!' },
   'msg.priceBye':   { en: 'Please let me know the price and when I can come. Asante!', sw: 'Tafadhali niambie bei na ni lini naweza kuja. Asante!' },
 
+  /* ----- salon location ----- */
+  'location.eyebrow': { en: 'Visit Us', sw: 'Tutembelee' },
+  'location.title': { en: 'Find AguStar Saloon', sw: 'Mahali Ilipo AguStar Saloon' },
+  'location.sub': { en: 'Visit us on Survey Darajani Road, Dar es Salaam.', sw: 'Tutembelee Survey Darajani Road, Dar es Salaam.' },
+  'location.addressTitle': { en: 'Our address', sw: 'Anwani Yetu' },
+  'location.directionsHint': { en: 'Tap below to open our shared location pin in Google Maps and get directions from wherever you are.', sw: 'Bonyeza hapa chini kufungua pini yetu ya Google Maps na kupata maelekezo ya kufika kutoka ulipo.' },
+  'location.directions': { en: 'Get Directions', sw: 'Pata Maelekezo ya Kufika' },
+  'location.mapTitle': { en: 'Map of Survey Darajani Road, Dar es Salaam', sw: 'Ramani ya Survey Darajani Road, Dar es Salaam' },
+
   /* ----- footer, misc ----- */
   'footer.about':   { en: 'Braids, twists, locs and natural hair care.', sw: 'Misuko, twists, locs na utunzaji wa nywele za asili.' },
   'footer.quick':   { en: 'Quick Links', sw: 'Viungo vya Haraka' },

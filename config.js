@@ -40,8 +40,8 @@ window.SALON_CONFIG = {
 
     /* Physical location (shown in the footer). */
     locationLines: [
-      "Mwenge",
-      "Dar-es-salaam, Tanzania"
+      "Survey Darajani Road",
+      "Dar es Salaam, 14112, Tanzania"
     ],
     /* Opening hours — edit freely (sample values, please replace).
        daySw / timeSw are the Swahili versions (optional). */
